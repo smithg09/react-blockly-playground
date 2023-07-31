@@ -1,0 +1,65 @@
+{
+  "name": "react-blockly-playground",
+  "description": "A React Wrapper for using Blockly, the visual programming editor from Google",
+  "keywords": [
+    "react",
+    "blockly"
+  ],
+  "author": "Smith",
+  "version": "1.2.0",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "lint": "eslint --ext .js,.jsx src",
+    "lint:fix": "eslint --fix --ext .js,.jsx src",
+    "start": "react-scripts start",
+    "build": "babel src/lib --out-dir dist --copy-files",
+    "eject": "react-scripts eject",
+    "prepublishOnly": "babel src/lib --out-dir dist --copy-files",
+    "prepublish:watch": "babel src/lib --out-dir dist --copy-files",
+    "prepare": "npm run prepublishOnly"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smithg09/react-blockly-playground.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smithg09/react-blockly-playground/issues"
+  },
+  "dependencies": {
+    "blockly": "^6.20210701.0",
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.10.4",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-preset-minify": "^0.5.1",
+    "expose-loader": "^0.7.5",
+    "node-sass": "^6.0.1",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-scripts": "^4.0.3"
+  }
+}
